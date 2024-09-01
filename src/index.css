@@ -1,0 +1,38 @@
+.popup-container.active {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container.active .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.popup-container.active .popup-wrapper {
+    z-index: 1;
+}
+
+.popup-container.active .close-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup-container.active .close-container span {
+    cursor: pointer;
+}
+
+.popup-container:not(.active) {
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
+}
